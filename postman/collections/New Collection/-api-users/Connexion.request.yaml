@@ -1,5 +1,5 @@
 $kind: http-request
-name: Connexion (USER)
+name: Connexion
 url: ""
-method: PoST
+method: POST
 order: 1920925765355164

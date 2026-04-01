@@ -1,5 +1,5 @@
 $kind: http-request
 name: Supprimer Jeu
 url: ""
-method: GET
+method: DELETE
 order: 3786823475712987

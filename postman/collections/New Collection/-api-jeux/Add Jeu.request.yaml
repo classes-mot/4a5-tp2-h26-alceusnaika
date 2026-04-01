@@ -1,5 +1,5 @@
 $kind: http-request
-name:Add Jeu
+name: Add Jeu
 url: ""
-method: GET
+method: POST
 order: 538740749956192

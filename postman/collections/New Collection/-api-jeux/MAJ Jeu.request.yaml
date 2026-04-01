@@ -1,5 +1,5 @@
 $kind: http-request
 name: MAJ Jeu
 url: ""
-method: GET
+method: PATCH
 order: 3786823475712987
