@@ -1,0 +1,5 @@
+$kind: http-request
+name: Inscription (USER)
+url: ""
+method: POST
+order: 1775050275390
