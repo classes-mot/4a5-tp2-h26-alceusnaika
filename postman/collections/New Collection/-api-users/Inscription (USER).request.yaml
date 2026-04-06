@@ -2,4 +2,21 @@ $kind: http-request
 name: Inscription (USER)
 url: http://localhost:5000/api/games
 method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Jane Doe\",\r
+
+    \    \"email\": \"janedoe@gmail.com\",\r
+
+    \    \"password\": \"123pass\",\r
+
+    \    \"image\": \"\",\r
+
+    \    \"role\": \"normal\",\r
+
+    \    \"game\": \"échecs\"\r
+
+    }"
 order: 1775050275390
