@@ -1,5 +1,5 @@
 $kind: http-request
 name: Inscription (USER)
-url: ""
+url: http://localhost:5000/api/games
 method: POST
 order: 1775050275390

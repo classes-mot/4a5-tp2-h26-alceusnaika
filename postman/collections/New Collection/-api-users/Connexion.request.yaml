@@ -1,5 +1,5 @@
 $kind: http-request
 name: Connexion
-url: ""
+url: http://localhost:5000/api/games
 method: POST
 order: 1920925765355164

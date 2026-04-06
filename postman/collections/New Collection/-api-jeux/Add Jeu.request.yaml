@@ -1,5 +1,8 @@
 $kind: http-request
 name: Add Jeu
-url: ""
+url: http://localhost:5000/api/games
 method: POST
+body:
+  type: json
+  content: ""
 order: 538740749956192

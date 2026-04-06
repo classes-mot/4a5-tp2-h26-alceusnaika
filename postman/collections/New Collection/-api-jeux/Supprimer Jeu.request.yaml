@@ -1,5 +1,5 @@
 $kind: http-request
 name: Supprimer Jeu
-url: ""
+url: http://localhost:5000/api/games
 method: DELETE
 order: 3786823475712987

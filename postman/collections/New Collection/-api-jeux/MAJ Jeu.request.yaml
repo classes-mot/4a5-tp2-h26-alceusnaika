@@ -1,5 +1,5 @@
 $kind: http-request
 name: MAJ Jeu
-url: ""
+url: http://localhost:5000/api/games
 method: PATCH
 order: 3786823475712987
