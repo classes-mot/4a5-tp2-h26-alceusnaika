@@ -6,3 +6,4 @@ function errorHandler(error, red, next) {
         res.json({ message: error.message || "Une erreur inconnue est survenue !" })
     }
 } 
+export default errorHandler;
