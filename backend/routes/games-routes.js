@@ -11,7 +11,7 @@ router.get('/', gamesController.getGamesById);
 
 router.get('/', gamesController.getGamesByUserId);
 
-router.user(checkAuth);
+router.use(checkAuth);
 
 router.post(
     '/',
