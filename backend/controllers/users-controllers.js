@@ -113,6 +113,6 @@ const updatedUserById = (req, res, next) => {
     res.status(200).json({ user: updatedUser });
 };
 export default {
-    getUsers, getUserByid, registerUser, login, updatedUserById,
+    getUsers, getUserById, registerUser, login, updatedUserById,
 };
 
