@@ -1,5 +1,5 @@
 import express from 'express';
-import { check} from 'express-validator';
+import { check } from 'express-validator';
 import gamesController from '../controllers/games-controller.js';
 import checkAuth from '../middleware/check-auth.js';
 
@@ -18,7 +18,7 @@ router.post(
     [
         check('id').not().isEmpty(),
         check('title').not().isEmpty(),
-        check('description').isLength({min : 10}),
+        check('description').isLength({ min: 10 }),
         check('nbJoueurs').not().isEmpty(),
     ],
     gamesController.createGame
