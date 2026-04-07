@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-    name: { Type: String, required: true },
-    email: { Type: String, required: true },
-    password: { Type: String, required: true },
-    image: { Type: String, required: true },
-    role: { Type: String, required: true },
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    password: { type: String, required: true },
+    image: { type: String, required: true },
+    role: { type: String, required: true },
     game: [
         {
-            Type: mongoose.Types.ObjectId,
+            type: mongoose.Types.ObjectId,
             required: true,
             ref: 'Game',
         }
