@@ -4,5 +4,19 @@ url: http://localhost:5000/api/games
 method: POST
 body:
   type: json
-  content: ""
+  content: "   {\r
+
+    \        \"id\": 1,\r
+
+    \        \"title\": \"échec\",\r
+
+    \        \"categorie\": \"stratégie\",\r
+
+    \        \"description\": \"jeu de société opposant deux joueurs\",\r
+
+    \        \"nbJouers\": 2,\r
+
+    \        \"dureePartie\": 60\r
+
+    \    }"
 order: 538740749956192

@@ -1,6 +1,6 @@
 $kind: http-request
 name: Inscription (USER)
-url: http://localhost:5000/api/games
+url: http://localhost:5000/api/users/register
 method: POST
 body:
   type: json
