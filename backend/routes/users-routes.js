@@ -8,7 +8,7 @@ router.get('/profile/:uid', usersController.getUserById);
 
 router.post('/register', usersController.registerUser);
 
-router.post('login', usersController.login);
+router.post('/login', usersController.login);
 
 router.patch('/profile:/uid', usersController.updatedUserById);
 
