@@ -15,6 +15,6 @@ export const connectDB = async () => {
         console.log('Erreur lors de la connexion', err);
         process.exit(1);
     }
-}
+};
 
 export default connectDB;
