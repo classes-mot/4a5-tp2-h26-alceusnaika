@@ -2,4 +2,21 @@ $kind: http-request
 name: Get All Jeux
 url: http://localhost:5000/api/games
 method: GET
+body:
+  type: json
+  content: "   {\r
+
+    \        \"id\": 1,\r
+
+    \        \"title\": \"échec\",\r
+
+    \        \"categorie\": \"stratégie\",\r
+
+    \        \"description\": \"jeu de société opposant deux joueurs\",\r
+
+    \        \"nbJouers\": 2,\r
+
+    \        \"dureePartie\": 60\r
+
+    \    }"
 order: 2414946200372444
