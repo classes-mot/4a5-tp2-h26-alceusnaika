@@ -54,7 +54,7 @@ const registerUser = async (req, res, next) => {
         password,
         image,
         role,
-        tasks
+        game
     });
     try {
         await createdUser.save();

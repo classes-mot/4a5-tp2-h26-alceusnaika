@@ -10,6 +10,6 @@ router.post('/register', usersController.registerUser);
 
 router.post('/login', usersController.login);
 
-router.patch('/profile:/uid', usersController.updatedUserById);
+router.patch('/profile/:uid', usersController.updatedUserById);
 
 export default router;
