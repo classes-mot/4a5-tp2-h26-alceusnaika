@@ -1,6 +1,16 @@
 import jwt from 'jsonwebtoken';
 import { User } from "../models/users.js";
 
+const DUMMY_USER = [
+    {
+        name: 'Jane Doe',
+        email: 'janedoe@gmail.com',
+        password: '123pass',
+        image: '',
+        role: 'normal',
+        game: 'échecs',
+    },
+]
 const getUsers = async (req, res, next) => {
     let users;
 
@@ -78,7 +88,7 @@ const login = async (req, res, next) => {
         const error = new HttpError('Enregistrement échoué...', 500);
         return next(error);
     }
-    const identifiedUser = find(
+    const identifiedUser = DUMMY_USER.find(
         (user) => user.email === email && user.password === password
     );
     console.log(identifiedUser);
@@ -104,12 +114,14 @@ const updatedUserById = (req, res, next) => {
     const { name, email, password, image, role } = req.body;
     const userIndex = findIndex((user) => user.id === userId);
     const updatedUser = {
+        ...DUMMY_USER[userIndex],
         name,
         email,
         password,
         image,
         role,
     };
+    DUMMY_USER[userIndex] = updatedUser;
     res.status(200).json({ user: updatedUser });
 };
 export default {
