@@ -34,7 +34,7 @@ const getUserById = async (req, res, next) => {
 
 const registerUser = async (req, res, next) => {
     console.log('registering');
-    const { name, email, password, image, role } = req.body;
+    const { name, email, password, image, role, game } = req.body;
 
     let existingUser;
     try {
