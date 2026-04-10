@@ -18,7 +18,7 @@ body:
 
     \    \"role\": \"normal\",\r
 
-    \    \"game\": \"échecs\"\r
+    \    \"game\": []\r
 
     }"
 order: 1920925765355164
