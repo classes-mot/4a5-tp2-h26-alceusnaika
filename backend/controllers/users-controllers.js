@@ -3,6 +3,7 @@ import { User } from "../models/users.js";
 
 const DUMMY_USER = [
     {
+        id: 1,
         name: 'Jane Doe',
         email: 'janedoe@gmail.com',
         password: '123pass',
@@ -59,6 +60,7 @@ const registerUser = async (req, res, next) => {
         return;
     }
     const createdUser = new User({
+        id,
         name,
         email,
         password,
@@ -115,6 +117,7 @@ const updatedUserById = (req, res, next) => {
     const userIndex = findIndex((user) => user.id === userId);
     const updatedUser = {
         ...DUMMY_USER[userIndex],
+        id,
         name,
         email,
         password,
